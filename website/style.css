@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),
+    url(https://thumb.tildacdn.com/tild6335-3166-4166-a335-643939336261/-/format/webp/workplace1245776_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.l-logo {
+color:#ffffff;
+font-size:28px;
+margin-top: 10px;
+left: 20px;
+position: absolute;
+}
+
+.nav {
+    width: 10%;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+   
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #19bbb3;
+    display: block;
+    margin:auto;
+    transform: 0,5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box {
+    width: 100%;
+    color:#ffffff;
+    left: 50%;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 25px;
+}
+.text-box h1{
+    font-size: 70px;
+    color: #fff;
+}
+
+.text-box  p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 38px;
+    font-size: 25px;
+    border-radius: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px solid #723b3b;
+    background: #19bbb3;
+    transition: 2s;
+}
+
+@media only screen and (max-width: 768px) {
+   
+
+     .l-logo {
+        font-size: 25px;
+        
+     }
+
+    .nav-links {
+      text-align: center; 
+    }
+  
+    .nav-links ul li {
+       display: inline-block;
+       margin-left: 80%;
+    }
+  
+    .nav-links ul li a {
+      font-size: 18px; 
+    }
+  
+  
+    .text-box h1 {
+      font-size: 40px; 
+    }
+  
+    .text-box p {
+      font-size: 18px; 
+      margin: 10px 0 20px; 
+    }
+  
+    .hero-btn {
+      padding: 10px 20px; 
+    }
+  }
+
+.course {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+    margin-top: 40px;
+}
+ 
+h1 {
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.7); 
+}
+
+
+p {
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.row {
+    
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col h3{
+    font-size: 30px;
+    color:rgba(0, 0, 0, 0.7);  
+}
+
+.course-col {
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media(max-width: 780px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+.campus {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+ 
+}
+
+.campus-color {
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-color img {
+    width: 100%;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.7s;
+    color:rgb(0, 0, 0);
+    justify-content: space-between; 
+}
+
+.layer:hover{
+    background: rgba(22, 25, 26, 0.7); 
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 30px;
+    bottom: 6px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.7s;
+    
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+.subscribe-btn:hover {
+    background-color: #ccc0c0;
+}
+
+
+.login-container {
+    width: 98%;
+    background-color: #fff;
+    padding: 70px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-right: 70px;
+    font-size: 30px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 30px;
+    right: 40px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #email-login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  #email-login input {
+    width: 100%;
+  }
+  
+  .submit {
+    background-color: #19bbb3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px 60px;
+    margin-left: 30px;
+    margin-top: 29px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .login-container {
+      padding: 20px;
+    }
+  
+    h2 {
+      font-size: 24px;
+      margin-right: 0;
+    }
+  
+    input {
+      margin-top: 10px;
+      right: 0;
+    }
+  
+    #email-login {
+      flex-direction: column;
+      width: 80%;
+    }
+  
+    .submit {
+      margin-top: 10px;
+      width: 100%;
+      margin-left: 8px;
+    }
+  }
+  
+
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-heading {
+    font-size: 45px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.footer-links a:hover {
+    color:#2763a7;
+}
+
+.footer-social-icons {
+    font-size: 45px;
+    display: flex;
+    gap: 80px;
+}
+.fa-instagram,.fa-facebook,.fa-twitter{
+    color:#19bbb3;
+}
+
+.fa-facebook:hover, .fa-twitter:hover,.fa-instagram:hover   {
+    color: #0056b3;
+}
+
+
+@media only screen and (max-width: 768px) {
+    footer {
+        padding: 10px; 
+        margin-top: 20px; 
+    }
+    .footer-heading {
+        font-size: 25px;
+        margin-bottom: 10px; 
+        margin-top: 5px;
+    }
+    .footer-social-icons {
+        margin-top: 10px; 
+        margin-right: 3%;
+        font-size: 40px; 
+    }
+}
+
